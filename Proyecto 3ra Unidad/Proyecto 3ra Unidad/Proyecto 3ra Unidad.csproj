@@ -72,6 +72,12 @@
     <Compile Include="Vista\FormaResultados.Designer.cs">
       <DependentUpon>FormaResultados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Vista\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\SplashScreen.Designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Vista\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -92,6 +98,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Vista\FormaResultados.resx">
       <DependentUpon>FormaResultados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

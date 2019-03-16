@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proyecto_3ra_Unidad.Vista;
 
 namespace Proyecto_3ra_Unidad
 {
@@ -16,7 +17,7 @@ namespace Proyecto_3ra_Unidad
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new SplashScreen());
         }
     }
 }
