@@ -18,7 +18,7 @@ namespace Proyecto_3ra_Unidad.Vista
         }
         private void SplashScreen_Load(object sender, EventArgs e)
         {
-            //the timer is now going to start
+            //El temporizador dara inicio desde aqui
             timeLeft = 50;
             timer1.Start();
         }
