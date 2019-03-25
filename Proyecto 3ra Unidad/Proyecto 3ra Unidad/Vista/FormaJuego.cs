@@ -22,14 +22,19 @@ namespace Proyecto_3ra_Unidad.Vista
         {
             Form1 forma = new Form1();
             forma.Show();
-            this.Hide();
+            this.Dispose();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             FormaFinJuego forma = new FormaFinJuego();
             forma.Show();
-            this.Hide();
+            this.Dispose();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

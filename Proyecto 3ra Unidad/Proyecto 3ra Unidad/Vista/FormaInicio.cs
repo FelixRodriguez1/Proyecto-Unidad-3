@@ -36,5 +36,19 @@ namespace Proyecto_3ra_Unidad
         {
             Application.Exit();
         }
+
+        private void buttonComoJugar_Click(object sender, EventArgs e)
+        {
+            FormaComoJugar forma = new FormaComoJugar();
+            forma.Show();
+            this.Hide();
+        }
+
+        private void buttonAcercaDe_Click(object sender, EventArgs e)
+        {
+            FormaAcercaDe forma = new FormaAcercaDe();
+            forma.Show();
+            this.Hide();
+        }
     }
 }

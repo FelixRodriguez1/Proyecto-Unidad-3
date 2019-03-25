@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBoxInicio.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
         TgAADk4B62xJZAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAACdvSURBVHhe7d0L
@@ -292,5 +292,13 @@
         dAgAtC0dAgBtS4cAQNvSIQDQtnQIALQtHQIAbUuHAEDb0iEA0LZ0CAC0LR0CAG1LhwBA29IhANC2dAgA
         tOydF/8fzQ8ms6V1uekAAAAASUVORK5CYII=
 </value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Reglas
+1. Sólo se puede mover un disco cada vez.
+
+2. Un disco de mayor tamaño no puede descansar sobre uno más pequeño que él mismo.
+
+3. Sólo puedes desplazar el disco que se encuentre arriba en cada varilla.</value>
   </data>
 </root>

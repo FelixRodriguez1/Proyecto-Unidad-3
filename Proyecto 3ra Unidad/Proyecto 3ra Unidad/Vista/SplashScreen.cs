@@ -35,7 +35,7 @@ namespace Proyecto_3ra_Unidad.Vista
             else
             {
                 timer1.Stop();
-                new Form1().Show();
+                new FormaIniciarSesion().Show();
                 this.Hide();
             }
         }

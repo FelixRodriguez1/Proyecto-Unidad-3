@@ -46,11 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Vista\Form1.cs">
+    <Compile Include="Modelos\Contador.cs" />
+    <Compile Include="Modelos\Disco.cs" />
+    <Compile Include="Modelos\Resultado.cs" />
+    <Compile Include="Modelos\Torre.cs" />
+    <Compile Include="Modelos\TorreHanoi.cs" />
+    <Compile Include="Vista\FormaAcercaDe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Vista\FormaAcercaDe.Designer.cs">
+      <DependentUpon>FormaAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormaComoJugar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormaComoJugar.Designer.cs">
+      <DependentUpon>FormaComoJugar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormaIniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormaIniciarSesion.Designer.cs">
+      <DependentUpon>FormaIniciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vista\FormaInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vista\FormaInicio.Designer.cs">
+      <DependentUpon>FormaInicio.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,8 +101,17 @@
     <Compile Include="Vista\SplashScreen.Designer.cs">
       <DependentUpon>SplashScreen.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Vista\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Vista\FormaAcercaDe.resx">
+      <DependentUpon>FormaAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormaComoJugar.resx">
+      <DependentUpon>FormaComoJugar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormaIniciarSesion.resx">
+      <DependentUpon>FormaIniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista\FormaInicio.resx">
+      <DependentUpon>FormaInicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
