@@ -36,5 +36,10 @@ namespace Proyecto_3ra_Unidad.Vista
         {
 
         }
+
+        private void FormaJuego_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

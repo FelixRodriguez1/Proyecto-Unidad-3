@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_3ra_Unidad.Modelos;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,7 +22,7 @@ namespace Proyecto_3ra_Unidad.Vista
         {
             if (textBoxUsuario.TextLength > 3 && textBoxUsuario.TextLength <= 50 && textBoxContraseña.TextLength >= 4 && textBoxContraseña.TextLength < 30)
             {
-                if (textBoxUsuario.Text == "usuario" && textBoxContraseña.Text == "contraseña")
+                if (loginHelper.Autenticar(textBoxUsuario.Text, textBoxContraseña.Text))
                 {
                     MessageBox.Show("Bienvenido!");
                     Form1 forma = new Form1();

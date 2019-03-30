@@ -66,6 +66,8 @@
             // 
             // labelTitulo
             // 
+            this.labelTitulo.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelTitulo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.labelTitulo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.labelTitulo.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitulo.Location = new System.Drawing.Point(0, 0);

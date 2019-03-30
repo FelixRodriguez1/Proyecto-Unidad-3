@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaAcercaDe));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBoxInicio = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBoxInicio = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -65,6 +65,8 @@
             // 
             // label3
             // 
+            this.label3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(0, 0);
@@ -73,6 +75,32 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Acerca de";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(272, 221);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Version 0.5.2";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(26, 171);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(191, 13);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Autor: Félix Eduardo Rodríguez García";
+            // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(23, 29);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(309, 138);
+            this.label1.TabIndex = 5;
+            this.label1.Text = resources.GetString("label1.Text");
             // 
             // pictureBoxInicio
             // 
@@ -84,32 +112,6 @@
             this.pictureBoxInicio.TabIndex = 4;
             this.pictureBoxInicio.TabStop = false;
             this.pictureBoxInicio.Click += new System.EventHandler(this.pictureBoxInicio_Click);
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(23, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(309, 138);
-            this.label1.TabIndex = 5;
-            this.label1.Text = resources.GetString("label1.Text");
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 171);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(191, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Autor: Félix Eduardo Rodríguez García";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(272, 221);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Version 0.4.2";
             // 
             // FormaAcercaDe
             // 
