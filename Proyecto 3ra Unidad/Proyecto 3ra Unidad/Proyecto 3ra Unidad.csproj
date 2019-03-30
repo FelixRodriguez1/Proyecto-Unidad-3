@@ -48,11 +48,11 @@
   <ItemGroup>
     <Compile Include="Modelos\Contador.cs" />
     <Compile Include="Modelos\Disco.cs" />
-    <Compile Include="Vista\loginHelper.cs" />
+    <Compile Include="Modelos\loginHelper.cs" />
     <Compile Include="Modelos\Resultado.cs" />
     <Compile Include="Modelos\Torre.cs" />
     <Compile Include="Modelos\TorreHanoi.cs" />
-    <Compile Include="Vista\Usuario.cs" />
+    <Compile Include="Modelos\Usuario.cs" />
     <Compile Include="Vista\FormaAcercaDe.cs">
       <SubType>Form</SubType>
     </Compile>
