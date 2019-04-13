@@ -12,18 +12,61 @@ namespace Proyecto_3ra_Unidad.Modelos
         private int _anchoT;
         private int _altoT;
         private int _colorT;
-
         public Torre()
         {
-            _idTorre = 0;
-            _anchoT = 0;
-            _altoT = 0;
-            _colorT = 0;
+            IdTorre = 0;
+            AnchoT = 0;
+            AltoT = 0;
+            ColorT = 0;
         }
 
-        public int IdTorre { get; set; }
-        public int AnchoT { get; set; }
-        public int AltoT { get; set; }
-        public int ColorT { get; set; }
+        public int IdTorre
+        {
+            get
+            {
+                return _idTorre;
+            }
+
+            set
+            {
+                _idTorre = value;
+            }
+        }
+        public int AnchoT
+        {
+            get
+            {
+                return _anchoT;
+            }
+
+            set
+            {
+                _anchoT = value;
+            }
+        }
+        public int AltoT
+        {
+            get
+            {
+                return _altoT;
+            }
+
+            set
+            {
+                _altoT = value;
+            }
+        }
+        public int ColorT
+        {
+            get
+            {
+                return _colorT;
+            }
+
+            set
+            {
+                _colorT = value;
+            }
+        }
     }
 }

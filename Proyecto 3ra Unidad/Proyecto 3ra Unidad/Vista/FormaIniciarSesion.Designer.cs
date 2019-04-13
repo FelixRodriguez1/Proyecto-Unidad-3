@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaIniciarSesion));
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.textBoxContraseña = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -103,6 +104,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxContraseña);
             this.Controls.Add(this.textBoxUsuario);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormaIniciarSesion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);

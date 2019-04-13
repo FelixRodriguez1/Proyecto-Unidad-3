@@ -12,9 +12,20 @@ namespace Proyecto_3ra_Unidad.Modelos
 
         public Resultado() : base()
         {
-            _posicionJu = 0;
+            PosicionJu = 0;
         }
 
-        public int PosicionJu { get; set; }
+        public int PosicionJu
+        {
+            get
+            {
+                return _posicionJu;
+            }
+
+            set
+            {
+                _posicionJu = value;
+            }
+        }
     }
 }

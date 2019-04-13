@@ -9,13 +9,14 @@ namespace Proyecto_3ra_Unidad.Modelos
     class TorreHanoi
     {
         protected int _idJuego;
-        protected int _numDiscos;
+        protected List<Disco> _numDiscos;
+        
         protected int _numTorres;
 
         public TorreHanoi()
         {
             _idJuego = 0;
-            _numDiscos = 0;
+            _numDiscos= new List<Disco>();
             _numTorres = 0;
         }
 

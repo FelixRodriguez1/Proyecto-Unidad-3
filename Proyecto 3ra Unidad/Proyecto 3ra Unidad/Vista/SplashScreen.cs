@@ -39,5 +39,10 @@ namespace Proyecto_3ra_Unidad.Vista
                 this.Hide();
             }
         }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

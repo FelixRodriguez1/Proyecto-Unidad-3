@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Drawing;
+
 namespace Proyecto_3ra_Unidad.Properties
 {
 
@@ -65,6 +67,14 @@ namespace Proyecto_3ra_Unidad.Properties
             set
             {
                 resourceCulture = value;
+            }
+        }
+        internal static Bitmap disco2
+        {
+            get
+            {
+                object @object = Resources.ResourceManager.GetObject("disco2", Resources.resourceCulture);
+                return (Bitmap)@object;
             }
         }
     }

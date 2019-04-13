@@ -12,8 +12,20 @@ namespace Proyecto_3ra_Unidad.Modelos
 
         public Contador()
         {
-            _movimientos = 0;
+            Movimientos = 0;
         }
-        public int Movimientos { get; set; }
+
+        public int Movimientos
+        {
+            get
+            {
+                return _movimientos;
+            }
+
+            set
+            {
+                _movimientos = value;
+            }
+        }
     }
 }

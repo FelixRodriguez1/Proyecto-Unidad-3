@@ -109,6 +109,7 @@
             this.ClientSize = new System.Drawing.Size(284, 351);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormaComoJugar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.splitContainer1.Panel1.ResumeLayout(false);

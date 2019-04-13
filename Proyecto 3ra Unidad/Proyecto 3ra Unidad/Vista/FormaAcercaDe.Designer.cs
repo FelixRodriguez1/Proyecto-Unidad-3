@@ -83,7 +83,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 13);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Version 0.5.2";
+            this.label4.Text = "Version 0.7.2";
             // 
             // label2
             // 
@@ -120,6 +120,7 @@
             this.ClientSize = new System.Drawing.Size(353, 385);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormaAcercaDe";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.splitContainer1.Panel1.ResumeLayout(false);
