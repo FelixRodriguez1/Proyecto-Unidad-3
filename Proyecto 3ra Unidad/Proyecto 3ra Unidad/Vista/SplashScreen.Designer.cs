@@ -43,7 +43,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(88, 62);
+            this.label1.Location = new System.Drawing.Point(101, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(286, 43);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(93, 146);
+            this.label2.Location = new System.Drawing.Point(94, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(303, 13);
             this.label2.TabIndex = 1;
@@ -75,16 +75,16 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(389, 371);
+            this.label4.Location = new System.Drawing.Point(390, 394);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Version 0.7.2";
+            this.label4.Text = "Version 1.0.5";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(156, 190);
+            this.pictureBox1.Location = new System.Drawing.Point(154, 167);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(189, 201);
             this.pictureBox1.TabIndex = 9;

@@ -25,9 +25,8 @@ namespace Proyecto_3ra_Unidad.Vista
                 if (loginHelper.Autenticar(textBoxUsuario.Text, textBoxContraseña.Text))
                 {
                     MessageBox.Show("Bienvenido!");
-                    Form1 forma = new Form1();
-                    forma.Show();
-                    this.Dispose();
+                    Program.formaInicio.Show();
+                    Dispose();
                 }
                 else
                 {
@@ -43,6 +42,11 @@ namespace Proyecto_3ra_Unidad.Vista
         private void buttonSalir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void textBoxUsuario_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

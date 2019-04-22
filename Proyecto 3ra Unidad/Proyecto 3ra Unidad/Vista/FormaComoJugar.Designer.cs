@@ -76,6 +76,7 @@
             // 
             // pictureBoxInicio
             // 
+            this.pictureBoxInicio.Cursor = System.Windows.Forms.Cursors.Cross;
             this.pictureBoxInicio.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxInicio.Image")));
             this.pictureBoxInicio.Location = new System.Drawing.Point(184, 238);
             this.pictureBoxInicio.Name = "pictureBoxInicio";

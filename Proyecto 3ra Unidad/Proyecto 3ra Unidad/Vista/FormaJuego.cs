@@ -11,15 +11,18 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using Proyecto_3ra_Unidad.Vista;
+using Proyecto_3ra_Unidad.Modelos;
 using Proyecto_3ra_Unidad.Properties;
+using System.IO;
 
 namespace Proyecto_3ra_Unidad.Vista
 {
     public partial class FormaJuego : Form
     {
 
+        public string ruta;
         private int alturaDisco = 25;
-        private int movidas = 1;
+        public int movidas = 1;
         /*protected override void Dispose(bool disposing)
         {
             if (disposing && this.components != null)
@@ -34,25 +37,18 @@ namespace Proyecto_3ra_Unidad.Vista
             alturaDisco = 25;
             movidas = 1;
             InitializeComponent();
+            ruta = "C:\\Users\\locog\\OneDrive\\Escritorio\\Resultados.txt";
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void buttonResultados_Click(object sender, EventArgs e)
         {
-            Form1 forma = new Form1();
-            forma.Show();
-            this.Dispose();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            FormaFinJuego forma = new FormaFinJuego();
-            forma.Show();
-            this.Dispose();
+            Program.formaResultados.Show();
+            Hide();
         }
 
         private void FormaJuego_Load(object sender, EventArgs e)
         {
-            agregar_anillos(3u);
+            agregarAnillos(3u);
             torre1.AllowDrop = true;
             torre2.AllowDrop = true;
             torre3.AllowDrop = true;
@@ -64,7 +60,7 @@ namespace Proyecto_3ra_Unidad.Vista
             torre3.DragDrop += new DragEventHandler(DiscoSoltar_DragDrop);
         }
 
-        private void agregar_anillos(uint Cant_Discos)
+        public void agregarAnillos(uint Cant_Discos)
         {
             torre1.Controls.Clear();
             torre2.Controls.Clear();
@@ -102,6 +98,7 @@ namespace Proyecto_3ra_Unidad.Vista
 
         private void DiscoSoltar_DragDrop(object sender, DragEventArgs e)
         {
+            
             GroupBox groupBox = (GroupBox)sender;
             Button button = e.Data.GetData("disco") as Button;
             if (groupBox != button.Parent)
@@ -122,8 +119,11 @@ namespace Proyecto_3ra_Unidad.Vista
                 labelMovidas.Text = Convert.ToString(movidas++);
                 if (groupBox.Name.ToString() == "torre3" && groupBox.Controls.Count == Convert.ToUInt16(cambiarDiscos.Text))
                 {
-                    MessageBox.Show("Terminaste en: " + labelMovidas.Text + " Movimientos.");
-                    agregar_anillos(Convert.ToUInt16(cambiarDiscos.Text));
+                    MessageBox.Show("Terminaste en: " + labelMovidas.Text + " Movimientos\n\nTu torre fue de: " + cambiarDiscos.Text + " Discos");
+                    StreamWriter resultado = new StreamWriter(ruta, true);
+                    resultado.WriteLine(labelMovidas.Text + "|" + cambiarDiscos.Text);
+                    resultado.Close();
+                    agregarAnillos(Convert.ToUInt16(cambiarDiscos.Text));
                     labelMovidas.Text = "0";
                     movidas = 1;
                 }
@@ -160,7 +160,7 @@ namespace Proyecto_3ra_Unidad.Vista
 
         private void cambiarDiscos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            agregar_anillos(Convert.ToUInt16(cambiarDiscos.Text));
+            agregarAnillos(Convert.ToUInt16(cambiarDiscos.Text));
             labelMovidas.Text = "0";
             movidas = 1;
         }
@@ -176,6 +176,12 @@ namespace Proyecto_3ra_Unidad.Vista
                 }
             }
             return button;
+        }
+
+        private void pictureInicio_Click(object sender, EventArgs e)
+        {
+            Program.formaInicio.Show();
+            Dispose();
         }
     }
 }

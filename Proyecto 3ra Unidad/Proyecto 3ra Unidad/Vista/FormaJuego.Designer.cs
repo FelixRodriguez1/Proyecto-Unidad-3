@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormaJuego));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureInicio = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cambiarDiscos = new System.Windows.Forms.ComboBox();
             this.labelMovidas = new System.Windows.Forms.Label();
+            this.buttonResultados = new System.Windows.Forms.Button();
             this.torre3 = new System.Windows.Forms.GroupBox();
             this.torre2 = new System.Windows.Forms.GroupBox();
             this.torre1 = new System.Windows.Forms.GroupBox();
@@ -45,7 +45,7 @@
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureInicio)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -74,12 +74,12 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 445F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 179F));
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pictureInicio, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.cambiarDiscos, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.labelMovidas, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.buttonResultados, 2, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -90,17 +90,17 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(746, 136);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // pictureBox2
+            // pictureInicio
             // 
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Cross;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(570, 86);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 47);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 4;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureInicio.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.pictureInicio.Image = ((System.Drawing.Image)(resources.GetObject("pictureInicio.Image")));
+            this.pictureInicio.Location = new System.Drawing.Point(570, 86);
+            this.pictureInicio.Name = "pictureInicio";
+            this.pictureInicio.Size = new System.Drawing.Size(100, 47);
+            this.pictureInicio.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureInicio.TabIndex = 4;
+            this.pictureInicio.TabStop = false;
+            this.pictureInicio.Click += new System.EventHandler(this.pictureInicio_Click);
             // 
             // label3
             // 
@@ -113,16 +113,6 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "No. Discos:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(570, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label2
             // 
@@ -163,8 +153,21 @@
             this.labelMovidas.TabIndex = 5;
             this.labelMovidas.Text = "0";
             // 
+            // buttonResultados
+            // 
+            this.buttonResultados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonResultados.Location = new System.Drawing.Point(570, 45);
+            this.buttonResultados.Name = "buttonResultados";
+            this.buttonResultados.Size = new System.Drawing.Size(87, 23);
+            this.buttonResultados.TabIndex = 5;
+            this.buttonResultados.Text = "Ver Resultados";
+            this.buttonResultados.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonResultados.UseVisualStyleBackColor = true;
+            this.buttonResultados.Click += new System.EventHandler(this.buttonResultados_Click);
+            // 
             // torre3
             // 
+            this.torre3.BackColor = System.Drawing.SystemColors.Control;
             this.torre3.Location = new System.Drawing.Point(490, 56);
             this.torre3.Name = "torre3";
             this.torre3.Size = new System.Drawing.Size(190, 220);
@@ -173,6 +176,7 @@
             // 
             // torre2
             // 
+            this.torre2.BackColor = System.Drawing.SystemColors.Control;
             this.torre2.Location = new System.Drawing.Point(270, 56);
             this.torre2.Name = "torre2";
             this.torre2.Size = new System.Drawing.Size(190, 220);
@@ -192,6 +196,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(746, 447);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
@@ -205,7 +210,7 @@
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureInicio)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -219,8 +224,8 @@
         private System.Windows.Forms.GroupBox torre3;
         private System.Windows.Forms.GroupBox torre2;
         private System.Windows.Forms.GroupBox torre1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureInicio;
+        private System.Windows.Forms.Button buttonResultados;
         private System.Windows.Forms.ComboBox cambiarDiscos;
         private System.Windows.Forms.Label labelMovidas;
     }

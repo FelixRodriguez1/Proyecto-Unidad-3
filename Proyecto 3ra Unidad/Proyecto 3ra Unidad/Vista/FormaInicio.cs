@@ -18,37 +18,32 @@ namespace Proyecto_3ra_Unidad
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonJuego_Click(object sender, EventArgs e)
         {
-            FormaJuego forma = new FormaJuego();
-            forma.Show();
-            this.Hide();
+            Program.formaJuego.Show();
+            Hide();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonResultados_Click(object sender, EventArgs e)
         {
-            FormaResultados forma = new FormaResultados();
-            forma.Show();
-            this.Hide();
+            Program.formaResultados.Show();
+            Hide();
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void buttonComoJugar_Click(object sender, EventArgs e)
         {
-            FormaComoJugar forma = new FormaComoJugar();
-            forma.Show();
-            this.Hide();
+            Program.formaComoJugar.Show();
+            Hide();
         }
 
         private void buttonAcercaDe_Click(object sender, EventArgs e)
         {
-            FormaAcercaDe forma = new FormaAcercaDe();
-            forma.Show();
-            this.Hide();
+            Program.formaAcercaDe.Show();
+            Hide();
+        }
+
+        private void pictureSalir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -83,7 +83,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 13);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Version 0.7.2";
+            this.label4.Text = "Version 1.0.5";
             // 
             // label2
             // 
@@ -104,6 +104,7 @@
             // 
             // pictureBoxInicio
             // 
+            this.pictureBoxInicio.Cursor = System.Windows.Forms.Cursors.Cross;
             this.pictureBoxInicio.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxInicio.Image")));
             this.pictureBoxInicio.Location = new System.Drawing.Point(252, 270);
             this.pictureBoxInicio.Name = "pictureBoxInicio";

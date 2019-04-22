@@ -19,9 +19,8 @@ namespace Proyecto_3ra_Unidad.Vista
 
         private void pictureBoxInicio_Click(object sender, EventArgs e)
         {
-            Form1 forma = new Form1();
-            forma.Show();
-            this.Hide();
+            Program.formaInicio.Show();
+            Hide();
         }
     }
 }

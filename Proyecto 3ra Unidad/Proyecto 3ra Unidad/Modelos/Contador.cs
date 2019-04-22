@@ -8,23 +8,23 @@ namespace Proyecto_3ra_Unidad.Modelos
 {
     class Contador
     {
-        private int _movimientos;
+        private int movidas;
 
         public Contador()
         {
-            Movimientos = 0;
+            movidas = 0;
         }
 
-        public int Movimientos
+        public int Movidas
         {
             get
             {
-                return _movimientos;
+                return movidas;
             }
 
             set
             {
-                _movimientos = value;
+                movidas = value;
             }
         }
     }

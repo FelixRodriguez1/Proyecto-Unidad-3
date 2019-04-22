@@ -87,7 +87,7 @@
             this.pictureSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureSalir.TabIndex = 3;
             this.pictureSalir.TabStop = false;
-            this.pictureSalir.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureSalir.Click += new System.EventHandler(this.pictureSalir_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -121,7 +121,7 @@
             this.buttonIniciar.TabIndex = 0;
             this.buttonIniciar.Text = "Juego Nuevo";
             this.buttonIniciar.UseVisualStyleBackColor = true;
-            this.buttonIniciar.Click += new System.EventHandler(this.button1_Click);
+            this.buttonIniciar.Click += new System.EventHandler(this.buttonJuego_Click);
             // 
             // buttonResultados
             // 
@@ -133,7 +133,7 @@
             this.buttonResultados.TabIndex = 1;
             this.buttonResultados.Text = "Resultados";
             this.buttonResultados.UseVisualStyleBackColor = true;
-            this.buttonResultados.Click += new System.EventHandler(this.button2_Click);
+            this.buttonResultados.Click += new System.EventHandler(this.buttonResultados_Click);
             // 
             // buttonComoJugar
             // 
@@ -164,6 +164,7 @@
             this.ClientSize = new System.Drawing.Size(459, 377);
             this.ControlBox = false;
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.splitContainer1.Panel1.ResumeLayout(false);
